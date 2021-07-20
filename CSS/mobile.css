@@ -37,9 +37,10 @@ header {
     justify-content: center;
     align-items: center; 
     text-align: center;
-    background-image: url("../IMAGES/assets/img/Bg-header.svg");
+    /* background-image: url("../IMAGES/assets/img/Bg-header.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain; */
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
 }
 header figure {
     width: 150px;
@@ -54,4 +55,17 @@ header figure {
     height: 218px;
     margin-top: 40px;
     text-align: center;
+}
+.header__title_container h1 {
+    color: var(--just-white);
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+}
+.header__title_container p {
+    color: var(--soft-orange);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin-top: 24px;
 }
