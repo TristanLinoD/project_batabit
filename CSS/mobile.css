@@ -27,3 +27,15 @@ html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif; /* La mayor parte utiliza DM */
 }
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+.main__exchange_container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
