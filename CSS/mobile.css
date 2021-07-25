@@ -31,6 +31,7 @@ main {
     width: 100%;
     height: auto;
     background-color: var(--off-white);
+    min-width: 320px;
 }
 .main__exchange_container {
     width: 100%;
@@ -233,4 +234,92 @@ header figure {
     line-height: 1.5rem;
     color: var(--warm-black);
     font-weight: 300;
+}
+.main__product_detail {
+    background-color: var(--black);
+    width: 100%;
+    height: auto;
+    position: relative;
+    min-width: 320px;
+    padding: 20px 10px;
+}
+.main__product_detail > span {
+    width: 40px;
+    height: 25px;
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 20px);
+    background-image: url('../IMAGES/assets/icons/batata.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main__product_detail div > h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--just-white);
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+}
+.main__product_detail div > p {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: #808080;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.main__product_detail .tarjeta {
+    width: 100%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    background-color: #282623;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    padding: 15px;
+
+}
+.tarjeta .icon_tarjeta{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tarjeta .clock {
+    background-image: url('../IMAGES/assets/icons/clock.svg');
+}
+.tarjeta .vista {
+    background-image: url('../IMAGES/assets/icons/eye.svg');
+}
+.tarjeta .dinero {
+    background-image: url('../IMAGES/assets/icons/dollar-sign.svg');
+}
+.tarjeta .correcto {
+    background-image: url('../IMAGES/assets/icons/check-circle.svg');
+}
+
+.tarjeta .tarjeta__title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+.tarjeta .tarjeta__texto {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: #808080;
 }
