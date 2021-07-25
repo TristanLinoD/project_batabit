@@ -211,3 +211,6 @@ header figure {
 .currency__table--container .table__right .up {
     background-image: url('../IMAGES/assets/icons/trending-up.svg');   
 } 
+#comission__table {
+    display: none;
+}
