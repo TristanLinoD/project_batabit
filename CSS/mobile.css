@@ -280,7 +280,7 @@ header figure {
     width: 100%;
     min-width: 288px;
     max-width: 400px;
-    height: 150px;
+    min-height: 150px;
     margin: 15px auto;
     background-color: #282623;
     border-radius: 5px;
@@ -322,4 +322,22 @@ header figure {
     line-height: 1.8rem;
     font-weight: 500;
     color: #808080;
+}
+main .bitcoin-img--container {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url('../IMAGES/assets/img/bitcoinbaby3x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.bitcoin-img--container h2 {
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+    
 }
