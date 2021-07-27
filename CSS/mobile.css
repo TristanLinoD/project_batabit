@@ -26,6 +26,7 @@ Agregando estilos:
 html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif; /* La mayor parte utiliza DM */
+    scroll-behavior: smooth;
 }
 main {
     width: 100%;
@@ -338,6 +339,135 @@ main .bitcoin-img--container {
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
+    color: var(--just-white);   
+}
+.main__plans_container {
+    width: 100%;
+    min-width: 320px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+.main__plans_container .plans--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.main__plans_container .plans--title h2 {
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    margin-bottom: 15px;
+    color: var(--black);
+}
+.main__plans_container .plans--title p {
+    padding-top: 30px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #757575;
+}
+.plans__container--slider {
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    padding: 0 10px;
+
+/* La propiedad de CSS overflow-x establece lo que se muestra cuando el contenido desborda los bordes izquierdo y derecho de un elemento a nivel de bloque. Puede que no sea nada, una barra de desplazamiento o el contenido adicional.
+
+overscroll-behavior
+
+la propiedad de css overscroll-behabior establece lo que hace un navegador cuando alcanza el límite de un área de desplazamiento. Es una abreviatura de overscroll-behavior-x y overscroll-behavior-y.
+
+scroll-snap-type
+
+La propiedad CSS scroll-snap-type establece qué tan estrictamente se aplican los puntos de snap en el contenedor de desplazamiento en caso de que haya uno */
+
+
+
+}
+.plans__container--slider .plans__container--card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 60%;
+    min-width: 215px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px 5px 0px;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.plans__container--card .recommended {
+    position: absolute;
+    top: -13px;
+    min-width: 101px;
+    left: calc(50% - 50px);
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: bold;
     color: var(--just-white);
-    
+    text-align: center;
+}
+.plan_info_container {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.plan_info_container .plan_card--title {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: #000000;
+}
+.plan_card--price {
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 6.3rem;
+    letter-spacing: -0.3rem;
+    padding: 5px 0;
+}
+.plan_card--price .sub-money {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #363636;
+    padding-right: 5px;
+}
+.plan_card--saving {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: #757575;
+}
+.plan_card--call_action {
+    width: 150px;
+    height: 48px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    color: var(--black);
+    border: 2px solid var(--bitcoin-orange);
+    background-color: var(--off-white);
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 4px;
+    margin-top: 20px;
+
+}
+.plan_card--call_action span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../IMAGES/assets/icons/orange-right-arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: text-bottom;
 }
