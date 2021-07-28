@@ -152,9 +152,17 @@ header figure {
     height: auto;
     margin: 0 auto;
     font-family: "Inter" , sans-serif;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
 
 }
-
+.currency__table--moneda, .main__tables_container--comisiones {
+    scroll-snap-align: center;
+    padding: 0 10px;
+}
 #table__coin--title, #table__comisiones--title {
     margin-bottom: 15px;
     font-weight: bold;
@@ -334,6 +342,7 @@ main .bitcoin-img--container {
     background-size: cover;
     text-align: center;
 }
+
 .bitcoin-img--container h2 {
     padding-top: 60px;
     font-size: 2.4rem;
@@ -344,7 +353,7 @@ main .bitcoin-img--container {
 .main__plans_container {
     width: 100%;
     min-width: 320px;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
     text-align: center;
 }
 .main__plans_container .plans--title {
@@ -503,3 +512,15 @@ footer figure img {
     width: 100%;
     min-width: 64px;
 }   
+
+@media (min-width: 375px){
+    .currency__table--moneda, .main__tables_container--comisiones{
+        padding: 0 12px;
+    }    
+
+}
+@media (min-width: 425px){
+    .currency__table--moneda, .main__tables_container--comisiones{
+        padding: 0 25px;
+    }    
+}
